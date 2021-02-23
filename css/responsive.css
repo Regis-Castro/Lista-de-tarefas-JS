@@ -1,0 +1,313 @@
+/*https://www.w3counter.com/globalstats.php?year=2020&month=12*/
+
+@media only screen and (max-width: 1920px) {
+  
+  header {
+    width: 60%;
+    margin-left: 20%;
+  }
+  
+  header h1 {
+    font-size: 3rem;  
+  }
+  
+  img#couple {
+    width: 600px; 
+  }
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+  header {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.7rem;  
+  }
+  
+  img#couple {
+    width: 500px; 
+  }
+  
+  div#main-container {
+    margin-left: 20%;
+  }
+
+  button#create-list {
+    margin-top: 6%;  
+  }
+
+  footer span {
+    font-size: 1.3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 1280px) {
+  header {
+    margin-left: 5%;
+  }
+}
+
+/*acho que esta é a mínima pra desktop*/
+@media only screen and (max-width: 1024px) {
+
+  .container {   
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 0.8fr 0.8fr 0.1fr;
+    grid-template-areas: 
+    "header header couple"
+    "image main main"
+    "footer footer footer";
+  }
+
+  header {
+    width: 85%;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;  
+  }
+  
+  header h3 {
+    font-size: 2rem;
+  }
+  
+  img#couple {
+    width: 400px; 
+  }
+
+  button#create-list {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 6%;
+  }
+
+  img#woman {
+    height: 400px;
+  }
+
+  
+  div#main-container {
+    margin-left: 16%;
+  }
+
+  div#main-container h1 {
+    font-size: 1.1rem;
+  }
+
+  div#main-container h3 {
+    font-size: 0.8rem;
+  }
+
+  span.task-title {
+    font-size: 0.8rem;
+  }
+
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    min-height: 200px;
+  }
+  
+  footer span {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  header {
+    width: 85%;
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;  
+  }
+  
+  header h3 {
+    font-size: 2rem;
+  }
+  
+  img#couple {
+    width: 300px; 
+  }
+
+  button#create-list {
+    font-size: 0.8rem;
+  }
+
+  img#woman {
+    height: 400px;
+  }
+
+  div#main-container {
+    margin-left: 16%;
+    width: 70%;
+    margin-top: 25%;
+  }
+}
+
+/*iphone 4 e 5*/
+@media only screen and (max-width: 640px) {
+  .container {   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header"
+    "couple"
+    "main"
+    "footer";
+  }
+
+  header {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  img#woman {
+    display: none;
+  }
+
+  img#couple {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+
+  div#main-container {
+    margin-top: 21%;
+  }
+
+  footer {
+    width: 640px;
+ }
+
+ footer span {
+   font-size: 0.9rem;
+ }
+}
+
+@media only screen and (max-width: 540px) {
+  header {
+    width: 85%;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h3 {
+    font-size: 2.6rem;
+  }
+
+  button#create-list {
+    font-size: 1.2rem;
+    padding: 0.9rem;  
+  }
+
+  div#main-container h1 {
+    font-size: 1.5rem;
+  }
+
+  div#main-container h3 {
+    font-size: 1.2rem;
+  }
+
+  span.task-title {
+    font-size: 1.2rem;
+  }
+
+  input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  footer span {
+    font-size: 1rem;
+  }
+}
+
+/*ficou bom
+@media only screen and (max-width: 480px) {
+
+}*/
+
+
+/*iPhone SE (320x568) */
+
+@media only screen and (max-width: 320px) {
+  .container {   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr 0.5fr;
+    grid-template-areas: 
+    "header"
+    "couple"
+    "main"
+    "footer";
+  }
+
+  header {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1.4rem;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  header h3 {
+    font-size: 3rem;
+  }
+
+  button#create-list {
+    font-size: 1.4rem;
+    padding: 0.9rem;  
+  }
+
+  img#couple {
+    width: 450px;
+    margin-top: 25%;
+  }
+
+  div#main-container {
+    margin-top: 25%;
+  }
+
+  div#main-container h1 {
+    font-size: 1.8rem;
+  }
+
+  div#main-container h3 {
+    font-size: 1.5rem;
+  }
+
+  span.task-title {
+    font-size: 1.5rem;
+  }
+
+  input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  footer span {
+    font-size: 1.4rem;
+  }
+
+}
+

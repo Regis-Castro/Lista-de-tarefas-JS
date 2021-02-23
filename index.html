@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lista de tarefas orientada a objetos</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6714d36dba.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Lista de tarefas Javascript</h1>
+      <h3>orientada a objetos</h3> 
+    
+    <p>Este projeto foi inspirado na seção 10 do curso "Orientação a objetos com Javascript (projetos e typescript)", do professor Matheus Battisti, da Udemy. Houve prática de grid CSS, flexbox e Javascript com orientação a objetos. A função da lista de tarefas concluídas foi criada por mim e pretendo implementar o back-end no futuro com node. A interface foi desenvolvida por Suelem Lamin, no figma. </p>
+
+    <button id="create-list">Criar minha lista <i class="fas fa-arrow-down"></i></button>
+
+    </header>
+
+    
+    <img id="couple" src="img/couple.svg" alt="Um casal. Um homem sentado ao computador e uma mulher em pé conferindo um caledário de parede">
+    
+   
+    
+    <div class="woman">
+    <img id="woman" src="img/woman.svg" alt="Uma mulher em pé apontando para a lista de tarefas do site">
+    </div>
+   
+      
+    
+    <!--lista de tarefas-->
+    <main>
+      <div id="main-container">
+        <div id="add-container">
+          <h1>Adicione suas tarefas</h1>
+          <form>
+          <input type="text" name="task" id="task" placeholder="O que você tem para fazer?">
+          <button type="submit" id="add"><i class="fa fa-plus"></i></button>
+          </form>
+        </div>
+
+        <div id="tasks-container">
+          <h3>Tarefas cadastradas</h3>
+          <!--template-->
+          <div class="task hide">
+            <i class="fa fa-check"></i>
+            <span class="task-title">Título da tarefa</span>
+            <i class="fas fa-trash"></i>
+          </div>
+          <!-- fim do template-->
+          <p id="empty-tasks">Não há tarefas cadastradas</p>
+        </div>
+
+        <div id="completed-tasks">
+          <h3>Tarefas completas</h3>
+           <!--template2-->
+           <div class="completed-task hide">
+            <span class="completed-task-title">Título da tarefa completa</span>
+          </div>
+          <!-- fim do template2-->
+          <p id="empty-completed-tasks">Não há tarefas completas</p>
+        </div>
+      </div>
+    </main>
+    
+
+    <footer><span>Regis de Castro - 2021</span></footer>
+  </div>
+
+  
+  
+  
+  <!--a tag button tem fechamento então dá pra adicionar html dentro dela, ao contrário da input-->
+  <script src="js/script2.js"></script>
+</body>
+</html>
